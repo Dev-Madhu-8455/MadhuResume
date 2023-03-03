@@ -1,0 +1,131 @@
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: lightpink; */
+}
+.education-profile {
+  background: #393938;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+}
+.sub-column-information {
+  margin:0 0 0 20px;
+}
+.sub-column-information h4 {
+  background-color: #4D4C4B;
+  border-left: 20px solid #FFC300;
+  padding-left: 8px;
+  margin-bottom: 2px;
+}
+.sub-column-information p {
+  margin: 0;
+}
+ .software-skills {
+  flex-direction: column;
+  padding: 10px;
+ }
+ .software-skills .info {
+  margin:0 0 0 20px
+ }
+ .profile-headings h3 {
+  border-bottom: 2px solid #FFC300;
+  padding: 0 0 6px 0px;
+ }
+ progress {
+  accent-color: #FFC300;
+ }
+ .profile-image {
+  text-align: center;
+ }
+ img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px;
+ }
+.experince-profile {
+  /* background: aliceblue; */
+  padding: 10px;
+  margin: 10px;
+}
+ .experince-profile header{
+  background: #FFC300;
+  padding:25px 50px 25px 50px;
+  align-items: center;
+ }
+ .experince-profile header h1{
+  margin-bottom: 2px;
+  font-weight: bold;
+ }
+ .experince-profile header h3{
+  margin-top: 0;
+  color: #4D4C4B;
+ }
+ .expeince-column {
+  padding:0 50px 0 50px;
+ }
+ .expeince-column h3 {
+  border-bottom: 3px solid #4D4C4B;
+  padding: 0 0 6px 0px;
+ }
+ .experince-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 25% 75%;
+
+ }
+ .experince-details h4 {
+  margin-bottom: 2px;
+ }
+ .experince-details h5 {
+  margin-top: 0;
+  color: gray;
+ }
+ span {
+  color: gray;
+ }
+ .plugins h4 {
+  background-color: #4D4C4B;
+  border-left: 20px solid #FFC300;
+  color: white;
+  margin-bottom: 2px;
+  padding-left: 8px;
+ }
+ .plugins p{
+  margin: 0;
+ }
+ @media (max-width: 720px){
+  .flex-container {
+   flex-direction: column;
+ }
+  .education-profile {
+   width: 100%;
+ }
+  .experince-content {
+   grid-template-columns:auto;
+ }
+  .experince-details h4 {
+    margin: 0;
+  }
+  .experince-year h4 {
+    margin: 0;
+    padding:0;
+  }
+  .skill-list{
+    display:grid;
+    grid-template-columns:50% 50%;
+  }
+}
+
+
+
